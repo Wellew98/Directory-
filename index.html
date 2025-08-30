@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johannesburg Accountants & Lawyers Directory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Johannesburg Professionals Directory</h1>
+    <p>Find trusted accountants and lawyers in Jozi. All data from public sources—verify before contacting.</p>
+  </header>
+
+  <section id="search-section">
+    <input type="text" id="search-input" placeholder="Search by name, specialty, or location...">
+    <select id="type-filter">
+      <option value="">All Types</option>
+      <option value="accountant">Accountants</option>
+      <option value="lawyer">Lawyers</option>
+    </select>
+    <button onclick="filterResults()">Filter</button>
+  </section>
+
+  <section id="results">
+    <!-- Listings will be dynamically added here via JS -->
+  </section>
+
+  <footer>
+    <p>© 2025 Your Directory. Complies with POPIA—data is public and anonymized where needed. For removals, email [your-email].</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
